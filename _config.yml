@@ -1,0 +1,31 @@
+# Site-wide settings. Restart `jekyll serve` after editing this file.
+title: Domek Andrzejówka
+tagline: Oaza ciszy i spokoju
+description: Domek Andrzejówka – całoroczny drewniany domek nad stawem w Mściszewicach, w sercu Szwajcarii Kaszubskiej. Oaza ciszy i spokoju.
+lang: pl
+locale: pl_PL
+url: https://domekandrzejowka.pl
+baseurl: ""
+
+google_analytics: G-TDYE2MHVPL
+
+plugins:
+  - jekyll-sitemap
+
+# Every page gets the "default" layout unless it says otherwise.
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+# Files that live in the repo but must NOT be published.
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - fetch-images.sh
+  - gallery.txt
+  - build.py
+  - .idea
+  - vendor

@@ -1,0 +1,17 @@
+  <header class="site-header">
+    <div class="hero">
+      <img src="/images/header.jpg" alt="Domek Andrzejówka nad stawem" width="1200" height="400">
+      <div class="hero-text">
+        <a class="site-title" href="/">{{ site.title }}</a>
+        <p class="tagline">{{ site.tagline }}</p>
+      </div>
+    </div>
+    <nav aria-label="Menu główne">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+      <ul id="menu">
+        {%- for item in site.data.navigation %}
+        <li><a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title }}</a></li>
+        {%- endfor %}
+      </ul>
+    </nav>
+  </header>

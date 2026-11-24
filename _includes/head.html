@@ -1,0 +1,25 @@
+{%- assign page_title = site.title -%}
+{%- unless page.url == "/" -%}
+  {%- assign page_title = page.title | append: " | " | append: site.title -%}
+{%- endunless -%}
+{%- assign page_desc = page.description | default: site.description -%}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page_title }}</title>
+  <meta name="description" content="{{ page_desc | escape }}">
+{%- if page.noindex %}
+  <meta name="robots" content="noindex">
+{%- else %}
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+{%- endif %}
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="{{ site.locale }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:title" content="{{ page_title }}">
+  <meta property="og:description" content="{{ page_desc | escape }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:image" content="{{ '/images/og.jpg' | absolute_url }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/style.css">
+{% include analytics.html %}

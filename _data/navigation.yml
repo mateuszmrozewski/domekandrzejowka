@@ -1,0 +1,19 @@
+# Menu order and labels. Add a line here to add a menu item.
+- title: Witamy
+  url: /
+- title: O domku
+  url: /o-domku/
+- title: Galeria
+  url: /galeria/
+- title: Lokalizacja
+  url: /lokalizacja/
+- title: Atrakcje
+  url: /atrakcje/
+- title: Cennik
+  url: /cennik/
+- title: Kalendarz
+  url: /kalendarz/
+- title: Regulamin
+  url: /regulamin/
+- title: Kontakt
+  url: /kontakt/

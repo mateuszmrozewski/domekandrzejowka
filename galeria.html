@@ -1,0 +1,19 @@
+---
+title: Galeria
+permalink: /galeria/
+description: Zdjęcia domku Andrzejówka, tarasów, stawu i okolicy.
+scripts:
+  - /assets/js/gallery.js
+---
+<h1>Galeria</h1>
+<ul class="gallery">
+  {%- for name in site.data.gallery %}
+  <li><a href="/images/gallery/{{ name }}.jpg"><img src="/images/gallery/thumbs/{{ name }}.jpg" alt="Domek Andrzejówka – zdjęcie {{ forloop.index }}" loading="lazy" width="200" height="150"></a></li>
+  {%- endfor %}
+</ul>
+<dialog id="lightbox" aria-label="Powiększone zdjęcie">
+  <button class="lb-close" aria-label="Zamknij">&times;</button>
+  <button class="lb-prev" aria-label="Poprzednie zdjęcie">&#8249;</button>
+  <img alt="">
+  <button class="lb-next" aria-label="Następne zdjęcie">&#8250;</button>
+</dialog>

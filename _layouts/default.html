@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+<head>
+{% include head.html %}
+</head>
+<body>
+  <a class="skip" href="#content">Przejdź do treści</a>
+  {% include header.html %}
+  <main id="content">
+{{ content }}
+  </main>
+  {% include footer.html %}
+  <script src="/assets/js/nav.js"></script>
+  {% for src in page.scripts %}<script src="{{ src }}"></script>
+  {% endfor %}
+</body>
+</html>
