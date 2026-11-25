@@ -20,7 +20,7 @@ Domek drewniany, całoroczny, dwupoziomowy Andrzejówka o powierzchni około 100
 
 Na piętrze znajdują się 2 sypialnie, kącik wypoczynkowy oraz toaleta z umywalką.
 
-- 1 sypialnia – łóżko małżeńskie, komoda, tv
+- 1 sypialnia – łóżko podwójne, komoda, tv
 - 2 sypialnia – 4 łóżka 1-osobowe, 4 szafki, komoda
 
 ## Staw i działka
